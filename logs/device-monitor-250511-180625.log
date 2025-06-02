@@ -1,0 +1,27 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x9 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+[  2160][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[  2671][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[  3183][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[  3695][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[  4207][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[  4719][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[  5231][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[  5743][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[  6255][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed

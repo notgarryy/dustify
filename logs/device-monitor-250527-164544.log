@@ -1,0 +1,14 @@
+[ 10843][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 11356][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 11868][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 12381][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 12893][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 13406][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 13918][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed

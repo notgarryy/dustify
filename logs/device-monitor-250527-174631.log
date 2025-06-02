@@ -1,0 +1,15 @@
+PM  2.5: 35.08
+PM 10.0: 35.08
+Send to /test/data_0006 -> ok
+PM  2.5: 34.71
+PM 10.0: 34.71
+Send to /test/data_0007 -> ok
+PM  2.5: 34.94
+PM 10.0: 34.94
+Send to /test/data_0008 -> ok
+PM  2.5: 34.69
+PM 10.0: 34.69
+Send to /test/data_0009 -> ok
+PM  2.5: 34.23
+PM 10.0: 34.23
+Send to /test/data_0010 -> ok

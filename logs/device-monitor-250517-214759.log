@@ -1,0 +1,279 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+PM2.5: 238.82 | PM10: 108.63
+Waiting for connection...
+PM2.5: 47.16 | PM10: 142.01
+BLE Notify: 0.00#0.00
+Device connected
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+PM2.5: 112.51 | PM10: 22.52
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+PM2.5: 211.10 | PM10: 1.46
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+PM2.5: 128.31 | PM10: 17.96
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+PM2.5: 35.52 | PM10: 266.63
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+PM2.5: 23.46 | PM10: 187.45
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+Restart advertising...
+PM2.5: 202.37 | PM10: 193.52
+BLE Notify: 0.00#0.00
+Device connected
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+PM2.5: 174.11 | PM10: 33.07
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+PM2.5: 17.96 | PM10: 71.32
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+PM2.5: 231.72 | PM10: 145.54
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+BLE Notify: 0.00#0.00
+PM2.5: 220.66 | PM10: 286.36
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+PM2.5: 9.64 | PM10: 91.94
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+PM2.5: 248.59 | PM10: 269.88
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+PM2.5: 232.81 | PM10: 180.68
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+PM2.5: 286.35 | PM10: 99.10
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+PM2.5: 10.57 | PM10: 290.07
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+PM2.5: 164.39 | PM10: 110.30
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+PM2.5: 45.90 | PM10: 145.14
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+PM2.5: 232.84 | PM10: 293.72
+BLE Notify: 136.98#123.04
+Restart advertising...
+PM2.5: 297.90 | PM10: 114.13
+BLE Notify: 136.98#123.04
+Device connected
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+PM2.5: 222.43 | PM10: 28.85
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+PM2.5: 46.30 | PM10: 36.57
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+BLE Notify: 136.98#123.04
+PM2.5: 268.76 | PM10: 284.41
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+PM2.5: 292.13 | PM10: 154.56
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+PM2.5: 179.44 | PM10: 261.08
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+PM2.5: 233.42 | PM10: 211.83
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+PM2.5: 159.59 | PM10: 184.77
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+PM2.5: 190.29 | PM10: 188.62
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+PM2.5: 118.25 | PM10: 205.69
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+PM2.5: 134.69 | PM10: 86.03
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+PM2.5: 58.71 | PM10: 263.70
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+PM2.5: 280.32 | PM10: 164.37
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+PM2.5: 114.53 | PM10: 200.79
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+PM2.5: 102.24 | PM10: 89.80
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+BLE Notify: 172.21#162.07
+PM2.5: 159.15 | PM10: 204.51
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+PM2.5: 85.65 | PM10: 278.77
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+PM2.5: 104.58 | PM10: 189.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+PM2.5: 182.34 | PM10: 93.53
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+PM2.5: 250.04 | PM10: 42.31
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+PM2.5: 274.95 | PM10: 279.73
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+PM2.5: 108.35 | PM10: 87.43
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+PM2.5: 297.12 | PM10: 294.62
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+PM2.5: 92.05 | PM10: 267.86
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+PM2.5: 4.14 | PM10: 231.71
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+PM2.5: 45.07 | PM10: 92.63
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+PM2.5: 92.06 | PM10: 209.23
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65
+BLE Notify: 168.56#184.65

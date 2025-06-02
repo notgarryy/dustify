@@ -1,0 +1,241 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x42002cbb  PS      : 0x00060a30  A0      : 0x82002d90  A1      : 0x3fcebe40  
+A2      : 0x00000010  A3      : 0x00000000  A4      : 0x60004000  A5      : 0x0000000b  
+A6      : 0x000000ff  A7      : 0x00000001  A8      : 0x08000000  A9      : 0x3fcebe10  
+A10     : 0x3fc9c244  A11     : 0x00000001  A12     : 0xffffffff  A13     : 0x00040000  
+A14     : 0x00000000  A15     : 0x3fc93828  SAR     : 0x00000010  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000010  LBEG    : 0x4203eb84  LEND    : 0x4203ebe8  LCOUNT  : 0x00000003  
+
+
+Backtrace: 0x42002cb8:0x3fcebe40 0x42002d8d:0x3fcebe70 0x42002d98:0x3fcebe90 0x42001c34:0x3fcebeb0 0x4202b52a:0x3fcebee0
+
+
+
+
+ELF file SHA256: 109b00731a65bac6
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42050f5e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x42002cbb  PS      : 0x00060a30  A0      : 0x82002d90  A1      : 0x3fcebe40  
+A2      : 0x00000010  A3      : 0x00000000  A4      : 0x60004000  A5      : 0x0000000b  
+A6      : 0x000000ff  A7      : 0x00000001  A8      : 0x08000000  A9      : 0x3fcebe10  
+A10     : 0x3fc9c244  A11     : 0x00000001  A12     : 0xffffffff  A13     : 0x00040000  
+A14     : 0x00000000  A15     : 0x3fc93828  SAR     : 0x00000010  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000010  LBEG    : 0x4203eb84  LEND    : 0x4203ebe8  LCOUNT  : 0x00000003  
+
+
+Backtrace: 0x42002cb8:0x3fcebe40 0x42002d8d:0x3fcebe70 0x42002d98:0x3fcebe90 0x42001c34:0x3fcebeb0 0x4202b52a:0x3fcebee0
+
+
+
+
+ELF file SHA256: 109b00731a65bac6
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42050f5e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x42002cbb  PS      : 0x00060a30  A0      : 0x82002d90  A1      : 0x3fcebe40  
+A2      : 0x00000010  A3      : 0x00000000  A4      : 0x60004000  A5      : 0x0000000b  
+A6      : 0x000000ff  A7      : 0x00000001  A8      : 0x08000000  A9      : 0x3fcebe10  
+A10     : 0x3fc9c244  A11     : 0x00000001  A12     : 0xffffffff  A13     : 0x00040000  
+A14     : 0x00000000  A15     : 0x3fc93828  SAR     : 0x00000010  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000010  LBEG    : 0x4203eb84  LEND    : 0x4203ebe8  LCOUNT  : 0x00000003  
+
+
+Backtrace: 0x42002cb8:0x3fcebe40 0x42002d8d:0x3fcebe70 0x42002d98:0x3fcebe90 0x42001c34:0x3fcebeb0 0x4202b52a:0x3fcebee0
+
+
+
+
+ELF file SHA256: 109b00731a65bac6
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42050f5e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x42002cbb  PS      : 0x00060a30  A0      : 0x82002d90  A1      : 0x3fcebe40  
+A2      : 0x00000010  A3      : 0x00000000  A4      : 0x60004000  A5      : 0x0000000b  
+A6      : 0x000000ff  A7      : 0x00000001  A8      : 0x08000000  A9      : 0x3fcebe10  
+A10     : 0x3fc9c244  A11     : 0x00000001  A12     : 0xffffffff  A13     : 0x00040000  
+A14     : 0x00000000  A15     : 0x3fc93828  SAR     : 0x00000010  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000010  LBEG    : 0x4203eb84  LEND    : 0x4203ebe8  LCOUNT  : 0x00000003  
+
+
+Backtrace: 0x42002cb8:0x3fcebe40 0x42002d8d:0x3fcebe70 0x42002d98:0x3fcebe90 0x42001c34:0x3fcebeb0 0x4202b52a:0x3fcebee0
+
+
+
+
+ELF file SHA256: 109b00731a65bac6
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42050f5e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x42002cbb  PS      : 0x00060a30  A0      : 0x82002d90  A1      : 0x3fcebe40  
+A2      : 0x00000010  A3      : 0x00000000  A4      : 0x60004000  A5      : 0x0000000b  
+A6      : 0x000000ff  A7      : 0x00000001  A8      : 0x08000000  A9      : 0x3fcebe10  
+A10     : 0x3fc9c244  A11     : 0x00000001  A12     : 0xffffffff  A13     : 0x00040000  
+A14     : 0x00000000  A15     : 0x3fc93828  SAR     : 0x00000010  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000010  LBEG    : 0x4203eb84  LEND    : 0x4203ebe8  LCOUNT  : 0x00000003  
+
+
+Backtrace: 0x42002cb8:0x3fcebe40 0x42002d8d:0x3fcebe70 0x42002d98:0x3fcebe90 0x42001c34:0x3fcebeb0 0x4202b52a:0x3fcebee0
+
+
+
+
+ELF file SHA256: 109b00731a65bac6
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42050f5e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x42002cbb  PS      : 0x00060a30  A0      : 0x82002d90  A1      : 0x3fcebe40  
+A2      : 0x00000010  A3      : 0x00000000  A4      : 0x60004000  A5      : 0x0000000b  
+A6      : 0x000000ff  A7      : 0x00000001  A8      : 0x08000000  A9      : 0x3fcebe10  
+A10     : 0x3fc9c244  A11     : 0x00000001  A12     : 0xffffffff  A13     : 0x00040000  
+A14     : 0x00000000  A15     : 0x3fc93828  SAR     : 0x00000010  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000010  LBEG    : 0x4203eb84  LEND    : 0x4203ebe8  LCOUNT  : 0x00000003  
+
+
+Backtrace: 0x42002cb8:0x3fcebe40 0x42002d8d:0x3fcebe70 0x42002d98:0x3fcebe90 0x42001c34:0x3fcebeb0 0x4202b52a:0x3fcebee0
+
+
+
+
+ELF file SHA256: 109b00731a65bac6
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42050f5e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x42002cbb  PS      : 0x00060a30  A0      : 0x82002d90  A1      : 0x3fcebe40  
+A2      : 0x00000010  A3      : 0x00000000  A4      : 0x60004000  A5      : 0x0000000b  
+A6      : 0x000000ff  A7      : 0x00000001  A8      : 0x08000000  A9      : 0x3fcebe10  
+A10     : 0x3fc9c244  A11     : 0x00000001  A12     : 0xffffffff  A13     : 0x00040000  
+A14     : 0x00000000  A15     : 0x3fc93828  SAR     : 0x00000010  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000010  LBEG    : 0x4203eb84  LEND    : 0x4203ebe8  LCOUNT  : 0x00000003  
+
+
+Backtrace: 0x42002cb8:0x3fcebe40 0x42002d8d:0x3fcebe70 0x42002d98:0x3fcebe90 0x42001c34:0x3fcebeb0 0x4202b52a:0x3fcebee0
+
+
+
+
+ELF file SHA256: 109b00731a65bac6
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42050f5e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+Guru Meditation Error: Core  1 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x42002cbb  PS      : 0x00060a30  A0      : 0x82002d90  A1      : 0x3fcebe40  
+A2      : 0x00000010  A3      : 0x00000000  A4      : 0x60004000  A5      : 0x0000000b  
+A6      : 0x000000ff  A7      : 0x00000001  A8      : 0x08000000  A9      : 0x3fcebe10  
+A10     : 0x3fc9c244  A11     : 0x00000001  A12     : 0xffffffff  A13     : 0x00040000  
+A14     : 0x00000000  A15     : 0x3fc93828  SAR     : 0x00000010  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000010  LBEG    : 0x4203eb84  LEND    : 0x4203ebe8  LCOUNT  : 0x00000003  
+
+
+Backtrace: 0x42002cb8:0x3fcebe40 0x42002d8d:0x3fcebe70 0x42002d98:0x3fcebe90 0x42001c34:0x3fcebeb0 0x4202b52a:0x3fcebee0
+
+
+
+
+ELF file SHA256: 109b00731a65bac6
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42050f5e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0

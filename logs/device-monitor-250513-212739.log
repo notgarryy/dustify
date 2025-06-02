@@ -1,0 +1,47 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+PM2.5: 170.64 | PM10: 267.98
+Waiting for connection...
+PM2.5: 7.36 | PM10: 196.20
+PM2.5: 62.11 | PM10: 194.19
+Device connected, sent 0#0
+PM2.5: 79.75 | PM10: 210.39
+PM2.5: 30.93 | PM10: 193.13
+PM2.5: 59.74 | PM10: 19.22
+PM2.5: 39.64 | PM10: 180.09
+PM2.5: 121.97 | PM10: 188.08
+PM2.5: 288.35 | PM10: 128.47
+PM2.5: 121.78 | PM10: 207.57
+PM2.5: 19.35 | PM10: 1.23
+PM2.5: 80.90 | PM10: 96.60
+PM2.5: 3.28 | PM10: 149.50
+BLE Notify: 90.21#156.93
+PM2.5: 8.78 | PM10: 200.80
+PM2.5: 260.93 | PM10: 216.68
+PM2.5: 54.50 | PM10: 189.46
+PM2.5: 204.86 | PM10: 278.36
+PM2.5: 22.63 | PM10: 241.89
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+PM2.5: 6.37 | PM10: 194.73
+Waiting for connection...
+PM2.5: 137.90 | PM10: 12.89
+PM2.5: 294.95 | PM10: 111.19
+Device connected, sent 0#0
+PM2.5: 4.65 | PM10: 210.58
+PM2.5: 233.43 | PM10: 23.99
+PM2.5: 35.39 | PM10: 268.86
