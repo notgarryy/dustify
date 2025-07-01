@@ -1,0 +1,116 @@
+[  7570][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[  8082][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[  8594][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[  9106][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[  9618][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 10130][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 10642][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 11154][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 11666][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 12178][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 12690][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 13202][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 13714][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 14226][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 14738][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 15250][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 15762][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 16274][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 16786][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 17298][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 17810][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 18322][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 18834][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 19346][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 19858][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 20370][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 20882][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 21394][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 21906][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 22418][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 22930][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 23442][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 23954][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 24466][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 24978][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 25490][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 26002][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 26514][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 27026][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 27538][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 28050][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 28562][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 29074][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 29586][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 30098][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+[ 30610][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probing failed
+SPS sensor probing successful
+measurements started
+Setup Completed!
+PM  2.5: 20.64
+PM 10.0: 21.87
+
+PM  2.5: 48.27
+PM 10.0: 48.27
+
+PM  2.5: 52.26
+PM 10.0: 52.26
+
+PM  2.5: 55.03
+PM 10.0: 55.03
+
+PM  2.5: 55.66
+PM 10.0: 55.66
+
+PM  2.5: 54.71
+PM 10.0: 54.71
+
+PM  2.5: 55.14
+PM 10.0: 55.14
+

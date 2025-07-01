@@ -1,0 +1,103 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+SPS sensor ready
+PM2.5: 55.36 | PM10: 55.36
+Waiting for connection...
+PM2.5: 59.23 | PM10: 59.23
+Sent on BLE connect: 59.23#59.23
+BLE Notify: 59.23#59.23
+Device connected
+Initial Notify on Connect: 59.23#59.23
+PM2.5: 61.27 | PM10: 61.27
+BLE Notify: 61.27#61.27
+PM2.5: 62.87 | PM10: 62.87
+BLE Notify: 62.87#62.87
+PM2.5: 63.76 | PM10: 63.76
+BLE Notify: 63.76#63.76
+PM2.5: 63.47 | PM10: 63.47
+BLE Notify: 63.47#63.47
+PM2.5: 63.73 | PM10: 63.73
+BLE Notify: 63.73#63.73
+PM2.5: 64.07 | PM10: 64.07
+BLE Notify: 64.07#64.07
+PM2.5: 63.91 | PM10: 63.91
+BLE Notify: 63.91#63.91
+PM2.5: 63.31 | PM10: 63.31
+BLE Notify: 63.31#63.31
+PM2.5: 63.24 | PM10: 63.24
+BLE Notify: 63.24#63.24
+PM2.5: 64.32 | PM10: 64.32
+BLE Notify: 62.38#62.38
+PM2.5: 65.03 | PM10: 65.03
+BLE Notify: 65.03#65.03
+PM2.5: 65.40 | PM10: 65.40
+BLE Notify: 65.40#65.40
+PM2.5: 65.87 | PM10: 65.87
+BLE Notify: 65.87#65.87
+PM2.5: 65.55 | PM10: 65.55
+BLE Notify: 65.55#65.55
+PM2.5: 64.63 | PM10: 64.63
+BLE Notify: 64.63#64.63
+PM2.5: 64.11 | PM10: 64.11
+BLE Notify: 64.11#64.11
+PM2.5: 63.57 | PM10: 63.57
+BLE Notify: 63.57#63.57
+PM2.5: 64.44 | PM10: 64.44
+BLE Notify: 64.44#64.44
+PM2.5: 64.65 | PM10: 64.65
+BLE Notify: 64.65#64.65
+PM2.5: 64.34 | PM10: 64.34
+BLE Notify: 64.34#64.34
+PM2.5: 63.92 | PM10: 63.92
+BLE Notify: 63.92#63.92
+[118819][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[118926][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[119032][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[119138][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[119244][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[119350][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[119456][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[119562][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[119668][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[119774][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[119880][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+PM2.5: 0.00 | PM10: 0.00
+BLE Notify: 59.29#59.29
+PM2.5: 0.00 | PM10: 0.00
+BLE Notify: 0.00#0.00
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+SPS sensor ready
+PM2.5: 58.30 | PM10: 58.30
+Waiting for connection...
+Sent on BLE connect: 58.30#58.30
+BLE Notify: 58.30#58.30
+Device connected
+PM2.5: 77.77 | PM10: 77.77
+Initial Notify on Connect: 77.77#77.77
+BLE Notify: 77.77#77.77
+[ 13651][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 13758][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 13864][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 13970][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 14076][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 14182][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 14288][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 14394][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 14500][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 14606][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+[ 14712][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1

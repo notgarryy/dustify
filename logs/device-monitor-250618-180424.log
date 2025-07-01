@@ -1,0 +1,14 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+SPS sensor ready
+PM2.5: 44.68 | PM10: 57.87
+Waiting for connection...
+PM2.5: 45.29 | PM10: 58.68
+PM2.5: 45.57 | PM10: 59.04

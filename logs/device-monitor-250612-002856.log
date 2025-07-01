@@ -1,0 +1,36 @@
+��ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+SPS sensor ready
+PM2.5: 60.29 | PM10: 69.28
+Waiting for connection...
+Device connected
+Initial Notify on Connect: 49.65#49.65
+Received byte: 1
+PM2.5: 50.11 | PM10: 50.11
+Received byte: 0
+PM2.5: 50.67 | PM10: 50.67
+PM2.5: 51.79 | PM10: 51.79
+PM2.5: 52.28 | PM10: 52.28
+PM2.5: 132.39 | PM10: 132.39
+Received byte: 1
+PM2.5: 784.57 | PM10: 784.57
+PM2.5: 811.06 | PM10: 811.06
+PM2.5: 126.78 | PM10: 126.78
+Received byte: 0
+PM2.5: 56.36 | PM10: 56.36
+PM2.5: 651.01 | PM10: 651.01
+PM2.5: 139.31 | PM10: 139.31
+BLE Notify: 247.22#247.97
+Received byte: 1
+PM2.5: 60.70 | PM10: 60.70
+PM2.5: 59.51 | PM10: 59.51
+Received byte: 0
+PM2.5: 55.82 | PM10: 55.82
+PM2.5: 55.42 | PM10: 55.42

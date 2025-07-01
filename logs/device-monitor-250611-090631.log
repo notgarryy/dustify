@@ -1,0 +1,63 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+SPS sensor ready
+PM2.5: 63.26 | PM10: 63.26
+Waiting for connection...
+PM2.5: 63.87 | PM10: 63.87
+Sent on BLE connect: 63.87#63.87
+BLE Notify: 63.87#63.87
+Device connected
+Initial Notify on Connect: 63.87#63.87
+PM2.5: 64.84 | PM10: 64.84
+BLE Notify: 64.84#64.84
+PM2.5: 65.01 | PM10: 65.01
+BLE Notify: 65.01#65.01
+PM2.5: 64.98 | PM10: 64.98
+BLE Notify: 64.98#64.98
+PM2.5: 65.23 | PM10: 65.23
+BLE Notify: 65.23#65.23
+PM2.5: 65.44 | PM10: 65.44
+BLE Notify: 65.44#65.44
+PM2.5: 65.28 | PM10: 65.28
+BLE Notify: 65.28#65.28
+PM2.5: 65.17 | PM10: 65.17
+BLE Notify: 65.17#65.17
+PM2.5: 64.90 | PM10: 64.90
+BLE Notify: 64.90#64.90
+PM2.5: 64.51 | PM10: 64.51
+BLE Notify: 64.51#64.51
+PM2.5: 64.33 | PM10: 64.33
+BLE Notify: 64.73#64.73
+PM2.5: 64.90 | PM10: 64.90
+BLE Notify: 64.90#64.90
+PM2.5: 64.29 | PM10: 64.29
+BLE Notify: 64.29#64.29
+PM2.5: 64.19 | PM10: 64.19
+BLE Notify: 64.19#64.19
+PM2.5: 64.09 | PM10: 64.09
+BLE Notify: 64.09#64.09
+PM2.5: 63.79 | PM10: 63.79
+BLE Notify: 63.79#63.79
+PM2.5: 63.35 | PM10: 63.35
+BLE Notify: 63.35#63.35
+PM2.5: 63.38 | PM10: 63.38
+BLE Notify: 63.38#63.38
+PM2.5: 63.57 | PM10: 63.57
+BLE Notify: 63.57#63.57
+PM2.5: 63.70 | PM10: 63.70
+BLE Notify: 63.70#63.70
+PM2.5: 63.36 | PM10: 63.36
+BLE Notify: 63.36#63.36
+PM2.5: 62.60 | PM10: 62.60
+BLE Notify: 62.60#62.60
+PM2.5: 62.24 | PM10: 62.24
+BLE Notify: 63.62#63.62
+PM2.5: 62.51 | PM10: 62.51
+BLE Notify: 62.51#62.51

@@ -33,6 +33,8 @@ BLEDescriptor *pDescr;
 BLE2902 *pBLE2902;
 volatile bool deviceConnected = false;
 volatile bool oldDeviceConnected = false;
+static bool initialNotified = false;
+bool alertON = true;
 static String lastSentPayload = "";
 
 // Shared data
@@ -40,16 +42,115 @@ char blePayload[32];
 float pm25 = 0, pm10 = 0;
 SemaphoreHandle_t xPayloadSemaphore;
 
+struct ISPUThreshold {
+  float Xb, Xa; // Konsentrasi ambien bawah dan atas
+  int Ib, Ia;   // ISPU batas bawah dan atas
+};
+
+// Ambang ISPU untuk PM2.5
+ISPUThreshold ispuPM25[] = {
+  {0, 15.5, 0, 50},
+  {15.6, 55.4, 51, 100},
+  {55.5, 150.4, 101, 200},
+  {150.5, 250.4, 201, 300},
+  {250.5, 500.0, 301, 500}
+};
+
+// Ambang ISPU untuk PM10
+ISPUThreshold ispuPM10[] = {
+  {0, 50, 0, 50},
+  {51, 150, 51, 100},
+  {151, 350, 101, 200},
+  {351, 420, 201, 300},
+  {421, 500, 301, 500}
+};
+
+// Fungsi untuk menghitung ISPU berdasarkan nilai dan ambang parameter
+int hitungISPU(float Xx, ISPUThreshold* threshold, int n) {
+  for (int i = 0; i < n; i++) {
+    if (Xx >= threshold[i].Xb && Xx <= threshold[i].Xa) {
+      float Xa = threshold[i].Xa;
+      float Xb = threshold[i].Xb;
+      int Ia = threshold[i].Ia;
+      int Ib = threshold[i].Ib;
+      return round(((Ia - Ib) / (Xa - Xb)) * (Xx - Xb) + Ib);
+    }
+  }
+  // Di luar rentang tabel
+  return -1;
+}
+
+// Fungsi untuk mengembalikan status berdasarkan ISPU
+const char* kategoriISPU(int ispu) {
+  if (ispu >= 0 && ispu <= 50) return "Very Good";
+  else if (ispu <= 100) return "Good";
+  else if (ispu <= 200) return "Fair";
+  else if (ispu <= 300) return "Poor";
+  else if (ispu > 300) return "Hazardous";
+  return "Unknown";
+}
+
+
+// SPS30 Init
+void sps_init() {
+  delay(2000);
+  sensirion_i2c_init();
+  while (sps30_probe() != 0) {
+    Serial.println("SPS sensor probe failed");
+    delay(500);
+  }
+  Serial.println("SPS sensor ready");
+  sps30_set_fan_auto_cleaning_interval_days(4);
+  sps30_start_measurement();
+  delay(2000);
+}
+
+// Read sensor
+bool sps_read(float *pm25, float *pm10) {
+  struct sps30_measurement m;
+  uint16_t data_ready;
+  int16_t ret;
+
+  for (int i = 0; i < 10; ++i) {
+    ret = sps30_read_data_ready(&data_ready);
+    if (ret == 0 && data_ready) break;
+    delay(100);
+  }
+
+  ret = sps30_read_measurement(&m);
+  if (ret < 0) return false;
+
+  *pm25 = 7.493066390949210 + (0.69661797 * m.mc_2p5);
+  *pm10 = 8.861446488889847 + (0.91803023 * m.mc_10p0);
+
+  return true;
+}
+
 // BLE server callback class
 class MyServerCallbacks : public BLEServerCallbacks {
   void onConnect(BLEServer *pServer) override {
     deviceConnected = true;
-    lv_label_set_text(ui_Label1, "PM Analyzer (C)");
+    lv_label_set_text(ui_title, "PM Analyzer (C)");
   }
 
   void onDisconnect(BLEServer *pServer) override {
     deviceConnected = false;
-    lv_label_set_text(ui_Label1, "PM Analyzer (D)");
+    lv_label_set_text(ui_title, "PM Analyzer (D)");
+  }
+};
+
+class MyCharacteristicCallbacks : public BLECharacteristicCallbacks {
+  void onWrite(BLECharacteristic *pCharacteristic) {
+    std::string value = pCharacteristic->getValue();
+    if (value.length() > 0) {
+      uint8_t byteValue = value[0];
+      Serial.print("Received byte: ");
+      Serial.println(byteValue);
+
+      alertON = (byteValue == 1);
+    } else {
+      Serial.println("Received empty write");
+    }
   }
 };
 
@@ -61,9 +162,10 @@ void BLE_init() {
   BLEService *pService = pServer->createService(SERVICE_UUID);
 
   pCharacteristic = pService->createCharacteristic(
-      CHARACTERISTIC_UUID,
-      BLECharacteristic::PROPERTY_NOTIFY);
+    CHARACTERISTIC_UUID,
+    BLECharacteristic::PROPERTY_NOTIFY | BLECharacteristic::PROPERTY_WRITE);
 
+  pCharacteristic->setCallbacks(new MyCharacteristicCallbacks());
   pDescr = new BLEDescriptor((uint16_t)0x2901);
   pDescr->setValue("ESP32 Device");
   pCharacteristic->addDescriptor(pDescr);
@@ -104,64 +206,36 @@ void BLETask(void *param) {
       Serial.println("Restart advertising...");
       pServer->startAdvertising();
       oldDeviceConnected = deviceConnected;
+      initialNotified = false;
     }
 
     if (deviceConnected && !oldDeviceConnected) {
       long now = millis();
       Serial.println("Device connected");
       oldDeviceConnected = deviceConnected;
+      initialNotified = false;
+    }
 
-      delay(1000);
+    if (deviceConnected && !initialNotified) {
+    float latestPm25, latestPm10;
+    if (sps_read(&latestPm25, &latestPm10)) {
       if (xSemaphoreTake(xPayloadSemaphore, portMAX_DELAY)) {
+        snprintf(blePayload, sizeof(blePayload), "%.2f#%.2f", latestPm25, latestPm10);
         pCharacteristic->setValue(blePayload);
         pCharacteristic->notify();
         Serial.print("Initial Notify on Connect: ");
         Serial.println(blePayload);
+        lastSentPayload = String(blePayload);  // So it doesn’t re-send immediately after
+        initialNotified = true;
         xSemaphoreGive(xPayloadSemaphore);
       }
     }
+  }
 
     vTaskDelay(1000 / portTICK_PERIOD_MS);  // Check every 1 second
   }
 }
 
-// SPS30 Init
-void sps_init() {
-  delay(2000);
-  sensirion_i2c_init();
-  while (sps30_probe() != 0) {
-    Serial.println("SPS sensor probe failed");
-    delay(500);
-  }
-  Serial.println("SPS sensor ready");
-  sps30_set_fan_auto_cleaning_interval_days(4);
-  sps30_start_measurement();
-}
-
-// Read sensor
-bool sps_read(float *pm25, float *pm10) {
-  struct sps30_measurement m;
-  uint16_t data_ready;
-  int16_t ret;
-
-  for (int i = 0; i < 10; ++i) {
-    ret = sps30_read_data_ready(&data_ready);
-    if (ret == 0 && data_ready) break;
-    delay(100);
-  }
-
-  ret = sps30_read_measurement(&m);
-  if (ret < 0) return false;
-
-  *pm25 = m.mc_2p5;
-  *pm10 = m.mc_10p0;
-
-  // *pm25 = (float)random(0, 30000) / 100;
-  // *pm10 = (float)random(0, 30000) / 100;
-  return true;
-}
-
-// Display flush
 void my_disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color_p) {
   uint32_t w = (area->x2 - area->x1 + 1);
   uint32_t h = (area->y2 - area->y1 + 1);
@@ -172,7 +246,6 @@ void my_disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color
   lv_disp_flush_ready(disp);
 }
 
-// Sensor + UI task (Core 1)
 void SensorUITask(void *param) {
   float sumPm25 = 0;
   float sumPm10 = 0;
@@ -193,7 +266,7 @@ void SensorUITask(void *param) {
       unsigned long currentMillis = millis();
       bool shouldAlert = (pm25 >= 55.0 || pm10 >= 75.0);
 
-      if (shouldAlert) {
+      if (shouldAlert && alertON) {
         // If buzzer is off and beep not requested yet, request beep now
         if (!buzzerOn && !beepRequested) {
           digitalWrite(BUZZER_PIN, HIGH);
@@ -216,15 +289,20 @@ void SensorUITask(void *param) {
         beepRequested = false;
       }
 
-      // --- Update chart + label ---
+      // --- Update label ---
       static char pm25_buf[16], pm10_buf[16];
-      snprintf(pm25_buf, sizeof(pm25_buf), "%.1f ug/m3", pm25);
-      snprintf(pm10_buf, sizeof(pm10_buf), "%.1f ug/m3", pm10);
+      snprintf(pm25_buf, sizeof(pm25_buf), "%.1f", pm25);
+      snprintf(pm10_buf, sizeof(pm10_buf), "%.1f", pm10);
       lv_label_set_text(ui_pm25val, pm25_buf);
       lv_label_set_text(ui_pm10val, pm10_buf);
-      lv_chart_set_next_value(ui_History_Chart, ui_History_Chart_series_1, pm25);
-      lv_chart_set_next_value(ui_History_Chart, ui_History_Chart_series_2, pm10);
-      lv_chart_refresh(ui_History_Chart);
+      
+      int ispu25 = hitungISPU(pm25, ispuPM25, sizeof(ispuPM25) / sizeof(ISPUThreshold));
+      int ispu10 = hitungISPU(pm10, ispuPM10, sizeof(ispuPM10) / sizeof(ISPUThreshold));
+
+      int ispuFinal = max(ispu25, ispu10); // Gunakan ISPU tertinggi
+      
+      lv_label_set_text(ui_Status, kategoriISPU(ispuFinal));
+
 
       // --- Average for BLE transmission ---
       sumPm25 += pm25;
@@ -268,9 +346,6 @@ void setup() {
   ui_init();
 
   sps_init();
-  sps_read(&pm25, &pm10);
-  sprintf(blePayload, "%.2f#%.2f", pm25, pm10);
-  std::string value(blePayload);
 
   xPayloadSemaphore = xSemaphoreCreateMutex();
 

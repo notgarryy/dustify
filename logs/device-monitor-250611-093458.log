@@ -1,0 +1,27 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+[  2582][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+SPS sensor probe failed
+SPS sensor ready
+PM2.5: 48.72 | PM10: 48.72
+Waiting for connection...
+PM2.5: 52.27 | PM10: 52.27
+Device connected
+Initial Notify on Connect: 54.31#54.31
+PM2.5: 55.47 | PM10: 55.47
+PM2.5: 58.70 | PM10: 58.70
+PM2.5: 60.19 | PM10: 60.19
+Restart advertising...
+Device connected
+Initial Notify on Connect: 60.91#60.91
+PM2.5: 61.24 | PM10: 61.24
+PM2.5: 61.23 | PM10: 61.23
+PM2.5: 61.65 | PM10: 61.65
+PM2.5: 61.74 | PM10: 61.74
